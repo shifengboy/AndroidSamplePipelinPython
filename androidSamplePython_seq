@@ -7,9 +7,12 @@ pipeline{
         stage('安卓程序源码同步') {
             steps {
                 sh 'mkdir -p AndroidSampleApp'
+                timeout(900){
                 dir("AndroidSampleApp"){
                     git branch:'master', url:'git@github.com:princeqjzh/AndroidSampleApp.git'
                 }
+                }
+
             }
         }
 
