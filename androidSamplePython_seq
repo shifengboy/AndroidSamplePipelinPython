@@ -52,7 +52,7 @@ pipeline{
             steps {
                 sh 'mkdir -p iAppBVT_Python'
                 dir("iAppBVT_Python"){
-                    git branch:'master', url:'git@github.com:princeqjzh/iAppBVT_Python.git'
+                    git branch:'master', url:'git@github.com:shifengboy/iAppBVT_Python.git'
                 }
             }
         }
