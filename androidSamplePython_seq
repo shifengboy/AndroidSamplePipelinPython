@@ -9,7 +9,7 @@ pipeline{
                 sh 'mkdir -p AndroidSampleApp'
                 timeout(900){
                 dir("AndroidSampleApp"){
-                    git branch:'master', url:'https://gitee.com/sfboy/AndroidSampleApp.git'
+                    git branch:'master', url:'git@github.com:shifengboy/AndroidSampleApp.git'
                 }
                 }
 
@@ -52,7 +52,7 @@ pipeline{
             steps {
                 sh 'mkdir -p iAppBVT_Python'
                 dir("iAppBVT_Python"){
-                    git branch:'master', url:'https://gitee.com/sfboy/iAppBVT_Python.git'
+                    git branch:'master', url:'git@github.com:shifengboy/iAppBVT_Python.git'
                 }
             }
         }
