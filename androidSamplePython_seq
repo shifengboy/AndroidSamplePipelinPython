@@ -9,7 +9,7 @@ pipeline{
                 sh 'mkdir -p AndroidSampleApp'
                 timeout(900){
                 dir("AndroidSampleApp"){
-                    git branch:'master', url:'ggit@gitee.com:sfboy/AndroidSampleApp.git'
+                    git branch:'master', url:'git@gitee.com:sfboy/AndroidSampleApp.git'
                 }
                 }
 
